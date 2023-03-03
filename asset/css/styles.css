@@ -8,7 +8,7 @@
 
 :root{
     --first-color: #4070F4;
-    --second-color: #0E2491;
+    --second-color: #0E2431;
 }
 
 :root{
@@ -121,8 +121,10 @@ img{
     height: var(--header-height);
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
     font-weight: var(--font-semi);
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 @media screen and (max-width: 768px) {
     .nav_menu{
@@ -254,6 +256,9 @@ img{
     width: 200px;
     border-radius: .5rem;
 }
+.about_text{
+    margin-bottom: var(--mb-2);
+}
 .about_button{
     display: flex;
     justify-content: center;
@@ -268,7 +273,7 @@ img{
     display: flex;
     align-items: center;
     padding: .5rem 1rem;
-    /*margin-bottom: var(--mb-4);*/
+    margin-bottom: var(--mb-4);
     border-radius: .5rem;
     box-shadow: 0 4px 25px rgba(14,36,49,.15);
     cursor: pointer;
@@ -286,16 +291,8 @@ img{
     transition: .4s;
 }
 .skills_titles{
-    max-width: 75%;
     display: flex;
     justify-content: space-between;
-    padding: .5rem 1rem;
-    box-shadow: 0 4px 25px rgba(14,36,49,.15);
-    border-radius: .5rem;
-    margin: 0 auto;
-}
-.skills_list{
-    background-color: olivedrab;
 }
 .skills_number{
     font-size: var(--normal-font-size);
@@ -303,8 +300,8 @@ img{
 }
 .skills_bar{
     height: 3px;
-    margin: 10px auto;
-    max-width: 50%;
+    margin: 0 auto;
+    max-width: 33%;
     background-color: var(--first-color);
 }
 .skills_close .skills_list{
@@ -417,6 +414,8 @@ img{
 
     .nav{
         height: calc(var(--header-height) + 1rem);
+        margin-right: 10rem;
+        margin-left: 5rem;
     }
     .nav_list{
         display: flex;
@@ -454,7 +453,7 @@ img{
         bottom: 15%;
     }
 
-    .about_container{
+    .about_container, .skills_container{
         grid-template-columns: repeat(2,1fr);
         align-items: center;
         text-align: initial;
@@ -495,6 +494,9 @@ img{
     }
     .home_img{
         right: 10%;
+    }
+    .about_img img{
+        width: 400px;
     }
     .contact_form{
         width: 500px;
