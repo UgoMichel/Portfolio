@@ -98,7 +98,6 @@ img{
 /*=== Layout ===*/
 
 .bd-grid{
-    max-width: 1024px;
     display: grid;
     grid-template-columns: 100%;
     grid-column-gap: 2rem;
@@ -269,7 +268,7 @@ img{
     display: flex;
     align-items: center;
     padding: .5rem 1rem;
-    margin-bottom: var(--mb-4);
+    /*margin-bottom: var(--mb-4);*/
     border-radius: .5rem;
     box-shadow: 0 4px 25px rgba(14,36,49,.15);
     cursor: pointer;
@@ -287,8 +286,16 @@ img{
     transition: .4s;
 }
 .skills_titles{
+    max-width: 75%;
     display: flex;
     justify-content: space-between;
+    padding: .5rem 1rem;
+    box-shadow: 0 4px 25px rgba(14,36,49,.15);
+    border-radius: .5rem;
+    margin: 0 auto;
+}
+.skills_list{
+    background-color: olivedrab;
 }
 .skills_number{
     font-size: var(--normal-font-size);
@@ -296,7 +303,7 @@ img{
 }
 .skills_bar{
     height: 3px;
-    margin: 0 auto;
+    margin: 10px auto;
     max-width: 50%;
     background-color: var(--first-color);
 }
@@ -332,6 +339,173 @@ img{
 .work_img img:hover{
     transform: scale(1.1);
 }
+
+/*=== Contact ===*/
+
+.contact_imput{
+    width: 100%;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi);
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 1.5px solid var(--second-color);
+    outline: none;
+    margin-bottom: var(--mb-4);
+}
+.contact_button{
+    display: block;
+    border: none;
+    outline: none;
+    font-size: var(--normal-font-size);
+    cursor: pointer;
+    margin-left: auto;
+}
+.contact_information{
+    display: flex;
+    margin-bottom: var(--mb-2);
+}
+.contact_icon{
+    font-size: 2rem;
+    color: var(--first-color);
+    margin-left: var(--mb-2);
+}
+.contact_title{
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi);
+}
+
+
+/*=== Footer ===*/
+
+.footer{
+    background-color: var(--second-color);
+    color: #fff;
+    text-align: center;
+    font-weight: var(--font-semi);
+    padding: 2rem 0;
+}
+.footer_title{
+    font-size: 2rem;
+    margin-bottom: var(--mb-4);
+}
+.footer_social{
+    margin-bottom: var(--mb-4);
+}
+.footer_icon{
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 var(--mb-2);
+}
+
+/*=== Media queries ===*/
+
+@media screen and (min-width: 768px) {
+    body{
+        margin: 0;
+    }
+    .section{
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+    .section-title{
+        margin-bottom: var(--mb-6);
+    }
+    .section-title:after{
+        width: 80px;
+        top: 3rem;
+    }
+
+    .nav{
+        height: calc(var(--header-height) + 1rem);
+    }
+    .nav_list{
+        display: flex;
+        padding-top: 0;
+    }
+    .nav_item{
+        margin-left: var(--mb-6);
+        margin-bottom: 0;
+    }
+    .nav_toggle{
+        display: none;
+    }
+    .nav_link{
+        color: var(--second-color);
+    }
+
+    .home{
+        height: 100vh;
+    }
+    .home_data{
+        align-self: flex-end;
+    }
+    .home_social{
+        padding-top: 0;
+        padding-bottom: 2.5rem;
+        flex-direction: row;
+        align-self: flex-end;
+    }
+    .home_social-icon{
+        margin-bottom: 0;
+        margin-right: var(--mb-4);
+    }
+    .home_img{
+        width: 457px;
+        bottom: 15%;
+    }
+
+    .about_container{
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        text-align: initial;
+    }
+    .about_img img{
+        width: 300px;
+    }
+
+    .work_container{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        column-gap: 2rem;
+    }
+
+    .contact_form{
+        width: 360px;
+    }
+    .contact_imput{
+        max-width: 360px;
+        min-width: 360px;
+    }
+    .contact_container{
+        justify-items: center;
+    }
+    .contact_informations{
+        display: flex;
+        margin-top: var(--mb-2);
+    }
+    .contact_icon{
+        padding-top: .5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .bd-grid{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .home_img{
+        right: 10%;
+    }
+    .contact_form{
+        width: 500px;
+    }
+    .contact_imput{
+        max-width: 500px;
+        min-width: 500px;
+    }
+}
+
+
 
 
 
