@@ -236,7 +236,7 @@ img{
     font-size: 1.25rem;
     margin-left: var(--mb-1);
     margin-bottom: 0;
-    transition: 3s;
+    transition: .3s;
 }
 
 /*=== About ===*/
@@ -259,6 +259,56 @@ img{
     display: flex;
     justify-content: center;
 }
+
+/*=== Skills ===*/
+
+.skills_container{
+    row-gap: 0;
+}
+.skills_header{
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-5);
+    cursor: pointer;
+}
+.skills_icon,
+.skills_arrow{
+    font-size: 2rem;
+    color: var(--first-color);
+}
+.skills_icon{
+    margin-right: var(--mb-2);
+}
+.skills_arrow{
+    margin-left: auto;
+    transition: .4s;
+}
+.skills_titles{
+    display: flex;
+    justify-content: space-between;
+}
+.skills_number{
+    font-size: var(--normal-font-size);
+    font-weight: normal;
+}
+.skills_bar{
+    height: 3px;
+    margin: 0 auto;
+    max-width: 50%;
+    background-color: var(--first-color);
+}
+.skills_close .skills_list{
+    height: 0;
+    overflow: hidden;
+}
+.skills_open .skills_list{
+    height: max-content;
+    margin-bottom: var(--mb-5);
+}
+.skills_open .skills_arrow{
+    transform: rotate(-180deg);
+}
+
 
 
 
