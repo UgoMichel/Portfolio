@@ -220,6 +220,14 @@ img{
     width: 295px;
 }
 
+.home_blob{
+    width: 250px;
+    fill: var(--first-color);
+}
+.home_blob-img{
+    width: 170px;
+}
+
 /* Buttons */
 
 .button{
@@ -450,7 +458,9 @@ img{
     }
     .home_img{
         width: 457px;
-        bottom: 15%;
+    }
+    .home_blob{
+        width: 350px;
     }
 
     .about_container, .skills_container{
@@ -494,6 +504,10 @@ img{
     }
     .home_img{
         right: 10%;
+        bottom: 20%;
+    }
+    .home_blob{
+        width: 450px;
     }
     .about_img img{
         width: 400px;
