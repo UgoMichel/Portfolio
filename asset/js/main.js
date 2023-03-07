@@ -80,7 +80,7 @@ sr.reveal('.about_button',{delay: 400})
 sr.reveal('.skills_content',{interval: 200})
 
 /*Scroll skills*/
-sr.reveal('.work_img',{interval: 200})
+sr.reveal('.work_box',{interval: 200})
 
 /*Scroll skills*/
 sr.reveal('.contact_imput',{interval: 200})
