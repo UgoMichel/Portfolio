@@ -46,6 +46,15 @@ skillsHeader.forEach((el) =>{
     el.addEventListener('click', toggleSkills)
 })
 
+/*=== Show Scroll Up ===*/
+
+function scollUp(){
+    const scrollUp = document.getElementById('scroll-up');
+    if (this.scrollY >= 560) scrollUp.classList.add('show-scroll');
+    else scrollUp.classList.remove('show-scroll');
+}
+window.addEventListener('scroll', scollUp);
+
 /*=== Scroll Reveal animation ===*/
 
 const sr = ScrollReveal({
