@@ -111,7 +111,7 @@ img{
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: #fff;
+    background-color: var(--first-color);
     box-shadow: 0 1px 4px rgba(146,161,176,.15);
 }
 
@@ -155,13 +155,13 @@ img{
     height: 0.18rem;
     left: 0;
     top: 2rem;
-    background-color: var(--first-color);
+    background-color: #fff;
 }
 .nav_logo{
-    color: var(--second-color);
+    color: #fff;
 }
 .nav_toggle{
-    color: var(--second-color);
+    color: #fff;
     font-size: 1.5rem;
     cursor: pointer;
 }
@@ -175,7 +175,7 @@ img{
     height: 0.18rem;
     left: 0;
     top: 2rem;
-    background-color: var(--first-color);
+    background-color: #fff;
 }
 
 /*=== Show menu ===*/
@@ -189,6 +189,12 @@ img{
 .home{
     height: calc(100vh - 3rem);
     row-gap: 1rem;
+    background-color: var(--first-color);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 2rem;
+    width: calc(100%);
 }
 .home_data{
     align-self: center;
@@ -196,9 +202,12 @@ img{
 .home_title{
     font-size: var(--big-font-size);
     margin-bottom: var(--mb-5);
+    color: #fff;
 }
 .home_title-color{
-    color: var(--first-color);
+    text-shadow: 0 20px 25px rgba(0,0,0,.5);
+    color: #fff;
+    font-size: 4rem;
 }
 .home_social{
     display: flex;
@@ -208,7 +217,7 @@ img{
     width: max-content;
     margin-bottom: var(--mb-2);
     font-size: 1.5rem;
-    color: var(--second-color);
+    color: #fff;
 }
 .home_social-icon:hover{
     color: var(--first-color);
@@ -222,13 +231,22 @@ img{
 
 .home_blob{
     width: 250px;
-    fill: var(--first-color);
+    fill: #fff;
 }
 .home_blob-img{
     width: 170px;
 }
 
 /* Buttons */
+
+.button_home{
+    display: inline-block;
+    background-color: #fff;
+    color: var(--first-color);
+    padding: .75rem 2.5rem;
+    font-weight: var(--font-semi);
+    border-radius: .5rem;
+}
 
 .button{
     display: inline-block;
@@ -487,9 +505,6 @@ img{
     }
     .nav_toggle{
         display: none;
-    }
-    .nav_link{
-        color: var(--second-color);
     }
 
     .home{
