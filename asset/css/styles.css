@@ -472,6 +472,20 @@ img{
     bottom: 5rem;
 }
 
+/*=== Scroll Bar ===*/
+
+::-webkit-scrollbar{
+    width: .75rem;
+    background-color: hsl(207, 4%, 75%);
+}
+::-webkit-scrollbar-thumb{
+    background-color: hsl(207, 4%, 65%);
+    border-radius: .5rem;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: hsl(207, 4%, 55%);
+}
+
 /*=== Media queries ===*/
 
 @media screen and (min-width: 768px) {
@@ -587,6 +601,7 @@ img{
         min-width: 500px;
     }
 }
+
 
 
 
