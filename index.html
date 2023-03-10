@@ -38,7 +38,7 @@
             <div class="bd-grid" >
                 <div class="home_data">
                     <h1 class="home_title">Hi, <br>I'am <span class="home_title-color">Ugo</span><br> Etudiant Informatique</h1>
-                    <a href="#" class="button_home">Contact</a>
+                    <a href="#contact" class="button_home">Contact</a>
                 </div>
 
                 <div class="home_social">
@@ -322,13 +322,15 @@
             <h2 class="section-title">Contact</h2>
 
             <div class="contact_container bd-grid">
-                <form action="" class="contact_form">
+                <form action="" class="contact_form" id="contact-form">
 
-                    <input type="text" id="name" placeholder="Name" class="contact_imput">
-                    <input type="email" placeholder="Email" class="contact_imput">
-                    <textarea name="" id="" cols="0" rows="10" class="contact_imput"></textarea>
+                    <input type="text" name="user_name" id="contact-name" placeholder="Nom" class="contact_imput">
+                    <input type="email" name="user_email" id="contact-email" placeholder="Mail" class="contact_imput">
+                    <textarea name="user_project" id="contact-project" cols="0" rows="10" placeholder="" class="contact_imput"></textarea>
 
-                    <input type="button" value="Envoyer" class="contact_button button">
+                    <p class="contact_message" id="contact-message"></p>
+
+                    <button type="submit" class="contact_button button">Envoyer</button>
                 </form>
 
                 <div class="contact_informations">
@@ -385,9 +387,11 @@
     </a>
 
 
-
+<!--    SROLLREVEAL-->
     <script src="https://unpkg.com/scrollreveal"></script>
-
+<!--    EMAIL JS-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<!--    MAIN JS-->
     <script src="asset/js/main.js"></script>
 </body>
 </html>

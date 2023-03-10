@@ -424,6 +424,21 @@ img{
     font-size: var(--h2-font-size);
     font-weight: var(--font-semi);
 }
+.contact_message{
+    font-size: var(--normal-font-size);
+    bottom: 2.8rem;
+    left: 1.5rem;
+}
+
+/* Status color */
+
+.color_red{
+    color: hsl(4, 71%, 50%);
+}
+.color_blue{
+    color: hsl(207, 56%, 45%);
+
+}
 
 
 /*=== Footer ===*/

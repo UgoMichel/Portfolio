@@ -66,7 +66,7 @@ const sr = ScrollReveal({
 
 /*Scroll home*/
 sr.reveal('.home_title',{})
-sr.reveal('.button',{delay: 200})
+sr.reveal('.button_home',{delay: 200})
 sr.reveal('.home_img',{delay: 400})
 sr.reveal('.home_social-icon',{interval: 200})
 
@@ -84,5 +84,48 @@ sr.reveal('.work_box',{interval: 200})
 
 /*Scroll skills*/
 sr.reveal('.contact_imput',{interval: 200})
+
+/*=== Email JS ===*/
+
+const contactForm = document.getElementById("contact-form"),
+    contactName = document.getElementById("contact-name"),
+    contactEmail = document.getElementById("contact-email"),
+    contactProject = document.getElementById("contact-project"),
+    contactMessage = document.getElementById("contact-message");
+
+const sendEmail = (e) =>{
+    e.preventDefault()
+
+    //Check if the field has a value
+    if (contactName.value === '' || contactEmail.value === '' || contactProject.value === ''){
+        //Add and remove color
+        contactMessage.classList.remove('color_blue');
+        contactMessage.classList.add('color_red');
+
+        //Show message
+        contactMessage.textContent = 'Remplisez tous les champs de texte !!';
+    }
+    else {
+        // serviceID - templateID - #form - publicKey
+        emailjs.sendForm('service_vp77km4','template_qjx670d','#contact-form','4xexnCeUqsN7R1-fU')
+            .then(() => {
+                //Show message and add color
+                contactMessage.classList.add('color_blue');
+                contactMessage.textContent = 'Message envoyé';
+
+                //Remove message after 5 seconds
+                setTimeout(() => {
+                    contactMessage.textContent = ''
+                }, 5000)
+            });
+
+        //To clear the input field
+        contactName.value = '';
+        contactEmail.value = '';
+        contactProject.value = '';
+    }
+}
+contactForm.addEventListener('submit', sendEmail);
+
 
 
