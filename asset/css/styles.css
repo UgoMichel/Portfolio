@@ -7,7 +7,7 @@
 }
 
 :root{
-    --first-color: #4070F4;
+    --first-color: #2E8B57;
     --second-color: #0E2431;
 }
 
@@ -323,6 +323,7 @@ img{
 .skills_number{
     font-size: var(--normal-font-size);
     font-weight: normal;
+    text-align: right;
 }
 .skills_bar{
     height: 3px;
@@ -388,7 +389,7 @@ img{
 }
 .work_text{
     font-size: var(--normal-font-size);
-    margin: .3rem 0 1rem;
+    margin: .3rem 0 2.5rem;
 }
 
 /*=== Contact ===*/
@@ -503,6 +504,7 @@ img{
 
 /*=== Media queries ===*/
 
+
 @media screen and (min-width: 768px) {
     body{
         margin: 0;
@@ -569,9 +571,11 @@ img{
     }
 
     .work_container{
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(2,1fr);
         column-gap: 2rem;
+    }
+    .work_title{
+        margin-bottom: 0;
     }
 
     .contact_form{
@@ -616,6 +620,15 @@ img{
         min-width: 500px;
     }
 }
+
+@media screen and (min-width: 1268px) {
+    .work_container{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        column-gap: 2rem;
+    }
+}
+
 
 
 
