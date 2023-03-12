@@ -127,5 +127,11 @@ const sendEmail = (e) =>{
 }
 contactForm.addEventListener('submit', sendEmail);
 
+// /*=== Home Projet ===*/
+//
+// window.addEventListener("scroll", function (){
+//     const header = document.querySelector('header');
+//     header.classList.add('sticky');
+// });
 
 
