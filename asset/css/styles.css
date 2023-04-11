@@ -411,6 +411,16 @@ img{
     margin: .3rem 0 1rem;
 }
 
+/*=== Carroussel ===*/
+.carroussel_div{
+    display: flex;
+    justify-content: center;
+}
+.carroussel{
+    width: 50%;
+    height: 875px;
+}
+
 /*=== Contact ===*/
 
 .contact_imput{
