@@ -103,7 +103,7 @@ const sendEmail = (e) =>{
         contactMessage.classList.add('color_red');
 
         //Show message
-        contactMessage.textContent = 'Remplisez tous les champs de texte !!';
+        contactMessage.textContent = 'Remplissez tous les champs de texte !!';
     }
     else {
         // serviceID - templateID - #form - publicKey

@@ -9,18 +9,18 @@
 </head>
 <body class="projet">
     <header class="l-header_projet" id="header">
-        <img src="asset/img/work1.jpg" class="banner">
+        <img src="asset/img/antonio-grosz-lszypRm8AkY-unsplash.jpg" class="banner">
             <div>
-                <a href="#" class="nav_logo">Projet</a>
+                <a href="#" class="nav_logo">Calcul d'itinéraire</a>
             </div>
         <nav class="nav">
             <div class="nav_menu" id="nav-menu">
                 <ul class="nav_list">
                     <li class="nav_item"><a href="index.html" class="nav_link active">Accueil</a></li>
-                    <li class="nav_item"><a href="#about" class="nav_link">Partie 1</a></li>
-                    <li class="nav_item"><a href="#skills" class="nav_link">Partie 2</a></li>
-                    <li class="nav_item"><a href="#work" class="nav_link">Partie 3</a></li>
-                    <li class="nav_item"><a href="#contact" class="nav_link">Partie 4</a></li>
+                    <li class="nav_item"><a href="#contexte" class="nav_link">Contexte</a></li>
+                    <li class="nav_item"><a href="#analyse" class="nav_link">Analyse</a></li>
+                    <li class="nav_item"><a href="#amelioration" class="nav_link">Amelioration</a></li>
+                    <li class="nav_item"><a href="index.html#contact" class="nav_link">Contact</a></li>
                 </ul>
             </div>
 
@@ -30,23 +30,124 @@
         </nav>
     </header>
     <main>
-        <section class="section_projet">
-            <h2 class="section_title">Titre</h2>
-            <p class="section_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi atque beatae corporis dolore facere fugiat
-                hic ipsam nam necessitatibus neque nisi nobis optio praesentium provident, rerum similique sunt voluptas.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aspernatur ipsam iure labore laboriosam,
-                laborum molestias odio temporibus. Ex fugit, laborum. Ad delectus iure odio, officia provident quos rem unde.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi atque beatae corporis dolore facere fugiat
-                hic ipsam nam necessitatibus neque nisi nobis optio praesentium provident, rerum similique sunt voluptas.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aspernatur ipsam iure labore laboriosam,
-                laborum molestias odio temporibus. Ex fugit, laborum. Ad delectus iure odio, officia provident quos rem unde.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi atque beatae corporis dolore facere fugiat
-                hic ipsam nam necessitatibus neque nisi nobis optio praesentium provident, rerum similique sunt voluptas.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aspernatur ipsam iure labore laboriosam,
-                laborum molestias odio temporibus. Ex fugit, laborum. Ad delectus iure odio, officia provident quos rem unde.
-            </p>
+        <section class="section_projet_first" id="contexte">
+            <h2 class="section-title-projet">Context</h2>
+            <div class="about_container bd-grid">
+                <div class="about_img">
+                    <img src="asset/img/tom-morbey-hk0-IkUyzKc-unsplash.jpg">
+                </div>
+
+                <div>
+                    <h2 class="about_subtitle">Sujet</h2>
+                    <p class="about_text">Une application Web codée qui calcule l’itinéraire le plus court entre 2 communes</p>
+                    <h2 class="about_subtitle">Les missions</h2>
+                    <p class="about_text">À partir d’un code existant, il fallait évaluer et ainsi optimiser les performances
+                        (temps, mémoire, …), la qualité logicielle (tests, organisation, commentaires, …), l’ergonomie
+                        (JS, rajouter des fonctionnalités, …), la sécurité (faille de sécurité) et enfin un bilan écologique
+                        (de l’appli Web, du gain pour un conducteur).</p>
+                    <h2 class="about_subtitle">Code existant</h2>
+                    <p class="about_text">L’application qui nous était donnée au début du projet pouvait calculer un parcours
+                        de 30 mètres en 15 secondes.</p>
+                    <h2 class="about_subtitle">Base de Données</h2>
+                    <p class="about_text">C'était une base de données Postgresql qui possédait l’extension PostGis pour
+                        manipuler des données géométriques. Nous devions utiliser l’outil Dbeaver afin de travailler sur
+                        cette base de données. La base de données du site web comportait le réseau routier français Route500
+                        fourni par l’IGN. Ce qui représente 35000 communes, 1300000 tronçons de route qui s’intersectent
+                        en 900000 nœuds routiers (carrefours). Les données étaient sous le format Shapefile, elles nous
+                        ont été données sous format SQL. Enfin, la base de données possédait des données géométriques SQL
+                        qui étaient au format latitude/longitude utilisées par les GPS, OpenStreetMap, …</p>
+                    <h2 class="about_subtitle">Mesure & Optimisation</h2>
+                    <p class="about_text">Dans un premier temps, Xdebug devait nous permettre d’analyser les performances
+                        PHP du site web en lançant un débogueur. Dans un second temps, nous devions trouver d’autres manières
+                        de mesurer et d’évaluer, les performances, la qualité logicielle, l’ergonomie, la sécurité et le bilan écologique.</p>
+                    <h2 class="about_subtitle">Composants à intégrer</h2>
+                    <p class="about_text">Enfin, les choses qui nous étaient demandées étaient de rajouter des fonctionnalités
+                        au site Web (connexion, demande de trajet), déplacement d’une partie de la logique du site Web côté
+                        client, utilisation de programmation réactive et aussi mise en place de requêtes asynchrones sur une API REST.</p>
+                    <h2 class="about_subtitle">Langages autorisés</h2>
+                    <p class="about_text">HTML, CSS (framework autorisé), PHP, JS.</p>
+                </div>
+
+            </div>
         </section>
+
+        <section class="section_projet" id="analyse">
+            <h2 class="section-title-projet">Analyse</h2>
+            <div class="about_container bd-grid">
+
+                <div>
+                    <p class="about_text">Lors de ce projet, j’ai pu développer et apprendre de nouvelles compétences
+                        techniques en informatique.</p>
+                    <h2 class="about_subtitle">Côté base de données</h2>
+                    <p class="about_text">En ce qui concerne la base de données, j’ai pu optimiser la base de données avec
+                        l’utilisation d'index et de vues matérialisés. J’ai aussi pu apprendre à manipuler des données
+                        géométriques pour stocker, mais également utiliser des coordonnées latitude/longitude d’une commune par exemple.</p>
+                    <h2 class="about_subtitle">Côté PHP</h2>
+                    <p class="about_text">Pour le côté PHP, j’ai appris à installer Xdebug sur Windows et ainsi à l’utiliser.
+                        Il m’a permis d'optimiser les performances de l’application en corrigeant les parties, trop lentes,
+                        du code déjà existant. Pour que l’application calcule plus rapidement l’itinéraire entre deux communes,
+                        nous avons dû ensemble revoir l'algorithme de calcul. C’est pourquoi nous avons remplacé le Dijkstra
+                        peu performant par l'algorithm A star avec des PriorityQueue. Puis nous avons aussi revu l’architecture
+                        du MVC en ajoutant un dossier Service. Afin d’extraire la logique métier de l‘application et d’alléger
+                        le contrôleur du code métier, ainsi que de la partie dédiée à la gestion des erreurs.  Enfin,
+                        j’ai utilisé PHPUnit pour implanter une suite de test dans le but d’évaluer la qualité logicielle.</p>
+                    <h2 class="about_subtitle">Côté JS</h2>
+                    <p class="about_text">J’ai pu ajouter différentes fonctionnalités utilisateur pour améliorer cette
+                        application. Par exemple, nous avons choisi ensemble d’ajouter un historique de trajet qui
+                        utilisera l’api REST. Mais aussi une api météo qui donne des indications supplémentaires sur
+                        la commune d'arrivée. Cette api m’a permis d’implémenter des requêtes AJAX.</p>
+                    <h2 class="about_subtitle">Côté Environnemental</h2>
+                    <p class="about_text">J’ai pris conscience que n'importe application ont un impact direct ou indirect
+                        sur l’environnement. C’est pourquoi l’objectif a été de limiter au maximum les appels à la base
+                        de données pour réduire l’échange de données.</p>
+                </div>
+
+                <div class="about_img">
+                    <img src="asset/img/Site%20Google%20Maps.png">
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section_projet" id="amelioration">
+            <h2 class="section-title-projet">Amelioration</h2>
+            <div class="about_container bd-grid">
+                <div class="about_img">
+                    <img src="asset/img/yura-fresh-n31x0hhnzOs-unsplash.jpg">
+                </div>
+
+                <div>
+                    <h2 class="about_subtitle">Pistes d’amélioration</h2>
+                    <p class="about_text">Les améliorations que nous pouvons ajouter sont multiples, mais une nouvelle
+                        fois la création de nouvelles fonctionnalités utilisateur est le plus approprié comme par exemple
+                        l’ajout d’éléments interactifs sur la carte. Puis, on peut penser à la possibilité de rechercher
+                        des trajets hors de la France (à l’international).</p>
+                    <p class="about_text">Par ailleurs, il serait très intéressant pour l'utilisateur de choisir son
+                        moyen de transport et par conséquent voir son impact écologique. </p>
+                    <p class="about_text">Enfin, il est évident qu’une version mobile sans connexions serait la bienvenue
+                        pour que n’importe qui n’importe où puisse utiliser l’application.</p>
+
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <footer class="footer">
+        <p class="footer_title">Ugo</p>
+
+        <div class="footer_social">
+            <a href="https://www.linkedin.com/in/ugo-michel-199a92230/" target="_blank" class="footer_icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/UgoMichel" target="_blank" class="footer_icon"><i class='bx bxl-github'></i></a>
+            <a href="https://gitlabinfo.iutmontp.univ-montp2.fr/" target="_blank" class="footer_icon"><i class='bx bxl-gitlab'></i></a>
+        </div>
+
+        <p>&#169; 2023 copyright all right reserved</p>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class='bx bx-chevrons-up scrollup_icon'></i>
+    </a>
 
 
 
