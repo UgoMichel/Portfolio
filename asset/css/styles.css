@@ -417,8 +417,8 @@ img{
     justify-content: center;
 }
 .carroussel{
-    width: 50%;
-    height: 875px;
+    width: 400px;
+    height: 425px;
 }
 
 /*=== Contact ===*/
@@ -660,6 +660,10 @@ img{
     .work_title{
         margin-bottom: 0;
     }
+    .carroussel{
+        width: 600px;
+        height: 625px;
+    }
 
     .contact_form{
         width: 360px;
@@ -694,6 +698,10 @@ img{
     }
     .about_img img{
         width: 500px;
+    }
+    .carroussel{
+        width: 800px;
+        height: 825px;
     }
     .contact_form{
         width: 500px;
