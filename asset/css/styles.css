@@ -121,7 +121,7 @@ img{
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: var(--first-color);
+    background-color: black;
     box-shadow: 0 1px 4px rgba(146,161,176,.15);
 }
 
