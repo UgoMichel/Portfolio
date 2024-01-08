@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="asset/css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Projet 5</title>
+</head>
+<body class="projet">
+<header class="l-header_projet" id="header">
+    <img src="asset/img/faisal-amir-Hx_BcBuFK1Y-unsplash.jpg" class="banner">
+    <div>
+        <a href="#" class="nav_logo">MyAvatar</a>
+    </div>
+    <nav class="nav">
+        <div class="nav_menu" id="nav-menu">
+            <ul class="nav_list">
+                <li class="nav_item"><a href="index.html" class="nav_link active">Accueil</a></li>
+                <li class="nav_item"><a href="#contexte" class="nav_link">Contexte</a></li>
+                <li class="nav_item"><a href="#analyse" class="nav_link">Analyse</a></li>
+                <li class="nav_item"><a href="#amelioration" class="nav_link">Amelioration</a></li>
+                <li class="nav_item"><a href="index.html#contact" class="nav_link">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="nav_toggle" id="nav-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="section_projet_first" id="contexte">
+        <h2 class="section-title-projet">Context</h2>
+        <div class="about_container bd-grid">
+            <div class="about_img">
+                <img src="asset/img/toby-osborn-jBySLmv651s-unsplash.jpg">
+            </div>
+
+            <div>
+                <h2 class="about_subtitle">Sujet</h2>
+                <p class="about_text">Un site “classique” nommé MyAvatar en mode server-side rendering inspiré du service Gravatar</p>
+                <h2 class="about_subtitle">Les missions</h2>
+                <p class="about_text">Cette application devait à travers une inscription permettre d’associer une adresse
+                    mail à une photo de profil. Ainsi, à partir de cette adresse mail, les différents sites web et applications
+                    pouvaient charger l’image de profil correspondante depuis le service MyAvatar. Cela avait pour but d’éviter
+                    à la fois aux autres applications de stocker cette image de leur côté mais aussi de demander à l’utilisateur
+                    d’uploader sa photo de profil. </p>
+                <p class="about_text">Par conséquent, l’objectif était que n’importe quelle application
+                    manipulant l’adresse mail d’un utilisateur pouvait facilement charger une image depuis MyAvatar.</p>
+                <h2 class="about_subtitle">Base de Données</h2>
+                <p class="about_text">Aucune base de données nous était mise à notre disposition au début du projet.
+                    Nous étions libres d'utiliser du MySQL ou bien du PostgreSQL.</p>
+                <h2 class="about_subtitle">Mesure & Optimisation</h2>
+                <p class="about_text">En ce qui concerne les mesures, nous avons dû appliquer et réutiliser les notions
+                    que l’on a pu voir lors des cours de Symfony. On peut donc penser à l’installation d’un projet Symfony,
+                    à l’utilisation des migrations, des entités et des formulaires sous le framework web. De plus, nous
+                    étions totalement libres au niveau du frontend, nous devions bien évidemment utiliser twig pour l’interface.
+                    C’est pourquoi en plus de twig, nous avons choisi d'utiliser le framework le plus optimisé pour les
+                    projets web, nommé Tailwind CSS.</p>
+                <h2 class="about_subtitle">Composants à intégrer</h2>
+                <p class="about_text">Les composants obligatoires à intégrer dans ce projet étaient de réaliser un site
+                    qui permet de s’inscrire en précisant un login, un mot de passe, une adresse email et surtout une photo
+                    de profil. Puis, il fallait que l’utilisateur puisse modifier les informations de son compte, notamment
+                    son adresse email et sa photo de profil. Il devait même pouvoir supprimer son compte tout en gérant
+                    en parallèle le fichier contenant la photo de profil. Enfin, on devait avoir accès à l’image de profil
+                    à partir du code obtenu en chiffrant l’adresse email de l’utilisateur en MD5.</p>
+                <h2 class="about_subtitle">Langages autorisés</h2>
+                <p class="about_text">HTML, CSS (framework autorisé), PHP (Symfony).</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section_projet" id="analyse">
+        <h2 class="section-title-projet">Analyse</h2>
+        <div class="about_container bd-grid">
+
+            <div>
+                <p class="about_text">Lors de ce projet, j’ai pu développer et apprendre de nouvelles compétences
+                    techniques en informatique.</p>
+                <h2 class="about_subtitle">Côté base de données</h2>
+                <p class="about_text">En ce qui concerne la base de données, nous avons choisi avec tous les membres du
+                    groupe de partir sur une base de données MySQL comme lors des cours de Symfony. Ainsi, j’ai pu appliquer
+                    ce que j’avais pu voir en cours comme la configuration de la base de données dans le projet Symfony.
+                    Puis, grâce au système de migration de Symfony, j’ai pu créer les différentes tables nécessaires.</p>
+                <h2 class="about_subtitle">Côté PHP</h2>
+                <p class="about_text">Pour le PHP, c’est la première fois que j’utilisais un framework PHP au sein d’un
+                    projet web. Ainsi, j’ai pu appliquer tous les principes de base de Symfony vue en cours. Cela m’a
+                    permis de réellement comprendre comment installer et configurer le framework au sein d’un projet.
+                    Puis, j’ai pu utiliser les différents outils qu'offre Symfony comme son système de migration, son
+                    système de routage, mais aussi sa façon particulière de traiter les formulaires. Enfin, ce projet
+                    m’a été utile pour solidifier mes compétences en développement backend.</p>
+                <h2 class="about_subtitle">Côté HTML & CSS</h2>
+                <p class="about_text">En ce qui concerne le frontend, nous avons choisi d’utiliser le framework Tailwind
+                    CSS. Nous l’avons préféré à Bootstrap pour des raisons d’optimisation. De plus, je suis amené à
+                    l’utiliser également lors de mes périodes en entreprise. Par conséquent, j’ai dans un premier temps
+                    utilisé les connaissances que je possédais afin de réaliser la meilleure application possible. Puis
+                    dans un second temps, ce projet m’a permis d’apprendre davantage vis à vis de ce framework. Ainsi,
+                    j’ai pu acquérir de nouvelles compétences en frontend.</p>
+            </div>
+
+            <div class="about_img">
+                <img src="asset/img/home_myAvatar.png">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section_projet" id="amelioration">
+        <h2 class="section-title-projet">Amelioration</h2>
+        <div class="about_container bd-grid">
+            <div class="about_img">
+                <img src="asset/img/freestocks-mw6Onwg4frY-unsplash.jpg">
+            </div>
+
+            <div>
+                <h2 class="about_subtitle">Pistes d’amélioration</h2>
+                <p class="about_text">Pour les pistes d’amélioration, nous pouvons bien évidemment ajouter de nouvelles
+                    fonctionnalités utilisateurs. Cependant, ce projet doit rester simple lors de son utilisation. Ainsi,
+                    on peut penser à l’ajout de plusieurs options de personnalisation au niveau de la page de profil par exemple.</p>
+                <p class="about_text">Enfin, une version mobile est toujours la bienvenue afin que ce service soit accessible
+                    partout, mais aussi par d'avantages d’utilisateur.</p>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p class="footer_title">Ugo</p>
+
+    <div class="footer_social">
+        <a href="https://www.linkedin.com/in/ugo-michel-199a92230/" target="_blank" class="footer_icon"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://github.com/UgoMichel" target="_blank" class="footer_icon"><i class='bx bxl-github'></i></a>
+        <a href="https://gitlabinfo.iutmontp.univ-montp2.fr/" target="_blank" class="footer_icon"><i class='bx bxl-gitlab'></i></a>
+    </div>
+
+    <p>&#169; 2023 copyright all right reserved</p>
+</footer>
+
+<a href="#" class="scrollup" id="scroll-up">
+    <i class='bx bx-chevrons-up scrollup_icon'></i>
+</a>
+
+
+
+<script src="asset/js/projet.js"></script>
+<script src="asset/js/main.js"></script>
+</body>
+</html>
